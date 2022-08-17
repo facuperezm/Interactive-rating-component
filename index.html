@@ -14,27 +14,44 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <!-- Rating state start -->
-
-    How did we do? Please let us know how we did with your support request. All
-    feedback is appreciated to help us improve our offering! 1 2 3 4 5 Submit
-
-    <!-- Rating state end -->
-
-    <!-- Thank you state start -->
-
-    You selected
-    <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
-
-    <!-- Thank you state end -->
-
+    <div class="main-component">
+      <div class="component">
+        <img src="./images/icon-star.svg" alt="star" />
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul>
+          <li><button class="btn">1</button></li>
+          <li><button class="btn">2</button></li>
+          <li><button class="btn">3</button></li>
+          <li><button class="btn">4</button></li>
+          <li><button class="btn">5</button></li>
+        </ul>
+        <button class="submit" id="submit-btn">submit</button>
+      </div>
+    </div>
+    <div class="thank-you hidden">
+      <img src="./images/illustration-thank-you.svg" alt="phone" />
+      <div class="selected">
+        You selected
+        <span id="rate">5</span>
+        out of 5
+      </div>
+      <h1>Thank you!</h1>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://github.com/facuperezm">Facundo Perez Montalvo</a>.
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
